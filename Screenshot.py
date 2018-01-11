@@ -27,8 +27,6 @@ def pull_screenshot():
     elif SCREENSHOT_WAY == 0:
         os.system('adb shell screencap -p /sdcard/answer.png')
         os.system('adb pull /sdcard/answer.png .')
-
-
 def check_screenshot():
     """
     检查获取截图的方式
